@@ -1,6 +1,7 @@
 FROM ubuntu:latest
 
 LABEL description="Network Mgmt Image (Ubuntu)"
+LABEL tag="network-testing-img"
 
 # Update and install tools
 RUN apt-get update 
