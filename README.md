@@ -1,36 +1,42 @@
 # Docker Images Repository
 
 ## Description
---------------
-This is a repo to contain Docker image build files separated by directory. </br>
+
+This repo is for referencing in docker build locally to create an image for network troubleshooting. </br>
 </br>
 
 ## How to Use this Project
---------------------------
-Locate the docker image from the ytable under the next heading and run docker build using the below syntax: </br>
 
-    docker build github.com/greyinghair/docker-images/<image-path>
+This is a repo to use as a URL source for generating a docker image with relevant tools running on ubuntu latest image.  
+Copy and paste below into your local terminal to build the image in docker: </br>
+
+    docker build github.com/greyinghair/docker-images/network-testing -t "network-testing-img"
 
 </br>
 
-List docker images availabble: </br>
+Verify image is now available in docker: </br>
 
     docker image ls
 
 </br>
 
-Create container based off an image and connect interactively to said container: </br>
+Create container based off the image and connect interactively to it: </br>
 
-    sudo docker run --name <name_for_container> -it <image-name>
+    sudo docker run --name <name_for_container> -it <network-testing-img>
 
 </br>
 
-## List of Docker/Images & Projects
------------------------------------
+## Image Contents
 
 
-| Docker Image | Purpose |
--------------- | ---- |
-| [network-testing](./network-testing/README.md) | Image containing key network troubleshooting tools |
-|  |  |
+</br>
 
+Base OS | Version | 
+------- | ------- |
+Ubuntu  | Latest  |
+
+</br>
+
+Installed Packages: </br>
+ - [tcping](https://neoctobers.readthedocs.io/en/latest/linux/tcpping_on_ubuntu.html)
+ - [MTR](https://en.wikipedia.org/wiki/MTR_(software))
