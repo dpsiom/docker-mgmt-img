@@ -6,6 +6,8 @@ This repo is for referencing in docker build locally to create an image for netw
 </br>
 
 ## How to Use this Project
+### Run Once
+</br>
 
 This is a repo to use as a URL source for generating a docker image with relevant tools running on ubuntu latest image.  
 Copy and paste below into your local terminal to build the image in docker: </br>
@@ -22,7 +24,20 @@ Verify image is now available in docker: </br>
 
 Create container based off the image and connect interactively to it: </br>
 
-    sudo docker run --name <name_for_container> -it <network-testing-img>
+    sudo docker run --name network_testing_container -it network-testing-img
+
+</br>
+
+### Run Everytime 
+</br> 
+
+If Container still running just attach to it: </br>
+
+	docker attach network_testing_comntainer
+
+If it isn’t running then start and attach: </br>
+	
+    docker start -a -i network_testing_container
 
 </br>
 
