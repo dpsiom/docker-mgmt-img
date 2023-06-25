@@ -1,7 +1,7 @@
 # Docker Network Testing Image
 
 ## Description
---------------
+
 
 This image is for network troubleshooting. </br>
 </br>
@@ -14,7 +14,8 @@ Copy and paste below into your local terminal to build the image in docker: </br
 </br>
 
 ## Image Contents
------------------
+
+
 </br>
 
 Base OS | Version | 
