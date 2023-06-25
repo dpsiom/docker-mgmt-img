@@ -40,3 +40,4 @@ Ubuntu  | Latest  |
 Installed Packages: </br>
  - [tcping](https://neoctobers.readthedocs.io/en/latest/linux/tcpping_on_ubuntu.html)
  - [MTR](https://en.wikipedia.org/wiki/MTR_(software))
+ - [ping](https://packages.ubuntu.com/search?keywords=inetutils-ping)
