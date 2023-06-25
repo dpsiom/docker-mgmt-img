@@ -1,12 +1,12 @@
 # Docker Images Repository
 
 ## Description
---------------
+
 This is a repo to contain Docker image build files separated by directory. </br>
 </br>
 
 ## How to Use this Project
---------------------------
+
 Locate the docker image from the ytable under the next heading and run docker build using the below syntax: </br>
 
     docker build github.com/greyinghair/docker-images/<image-path>
@@ -26,8 +26,8 @@ Create container based off an image and connect interactively to said container:
 </br>
 
 ## List of Docker/Images & Projects
------------------------------------
 
+</br>
 
 | Docker Image | Purpose |
 -------------- | ---- |
