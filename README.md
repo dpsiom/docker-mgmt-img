@@ -9,7 +9,7 @@ This is a repo to contain Docker image build files separated by directory. </br>
 
 Locate the docker image from the ytable under the next heading and run docker build using the below syntax: </br>
 
-    docker build github.com/greyinghair/docker-images/<image-path>
+    docker build github.com/greyinghair/docker-images/<image-path> -t "<image-name>-img"
 
 </br>
 
