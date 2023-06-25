@@ -5,6 +5,24 @@
 This repo is for referencing in docker build locally to create an image for network troubleshooting. </br>
 </br>
 
+
+## Image Contents
+
+
+</br>
+
+Base OS | Version | 
+------- | ------- |
+Ubuntu  | Latest  |
+
+</br>
+
+Installed Packages: </br>
+ - [tcping](https://neoctobers.readthedocs.io/en/latest/linux/tcpping_on_ubuntu.html)
+ - [MTR](https://en.wikipedia.org/wiki/MTR_(software))
+ - [ping](https://packages.ubuntu.com/search?keywords=inetutils-ping)
+</br>
+
 ## How to Use this Project
 ### Run Once
 </br>
@@ -40,19 +58,3 @@ If it isn’t running then start and attach: </br>
     docker start -a -i network_testing_container
 
 </br>
-
-## Image Contents
-
-
-</br>
-
-Base OS | Version | 
-------- | ------- |
-Ubuntu  | Latest  |
-
-</br>
-
-Installed Packages: </br>
- - [tcping](https://neoctobers.readthedocs.io/en/latest/linux/tcpping_on_ubuntu.html)
- - [MTR](https://en.wikipedia.org/wiki/MTR_(software))
- - [ping](https://packages.ubuntu.com/search?keywords=inetutils-ping)
