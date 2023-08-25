@@ -24,6 +24,7 @@ Installed Packages: </br>
  - [dnsutils](https://packages.ubuntu.com/jammy/i386/bind9-dnsutils/filelist)
  - [netcat/ncc](https://packages.ubuntu.com/jammy/netcat)
  - [nmap](https://packages.ubuntu.com/jammy/nmap)
+ - [curl](https://packages.ubuntu.com/jammy/curl)
 </br>
 
 ## How to Use this Project
