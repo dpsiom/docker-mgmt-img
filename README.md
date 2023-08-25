@@ -22,6 +22,8 @@ Installed Packages: </br>
  - [MTR](https://en.wikipedia.org/wiki/MTR_(software))
  - [ping](https://packages.ubuntu.com/search?keywords=inetutils-ping)
  - [dnsutils](https://packages.ubuntu.com/jammy/i386/bind9-dnsutils/filelist)
+ - [netcat/ncc](https://packages.ubuntu.com/jammy/netcat)
+ - [nmap](https://packages.ubuntu.com/jammy/nmap)
 </br>
 
 ## How to Use this Project
