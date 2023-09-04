@@ -1,4 +1,5 @@
-FROM ubuntu:latest
+# FROM ubuntu:latest
+FROM --platform=linux/amd64 ubuntu:latest
 
 LABEL description="Network Mgmt Image (Ubuntu)"
 LABEL tag="network-testing-img"
