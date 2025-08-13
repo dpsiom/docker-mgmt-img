@@ -1,8 +1,8 @@
 # FROM ubuntu:latest
 FROM --platform=linux/arm64 ubuntu:latest
 
-LABEL description="Network Mgmt Image (Ubuntu)"
-LABEL tag="network-testing-img"
+LABEL description="Mgmt Image (Ubuntu)"
+LABEL tag="network-mgmt-img"
 
 # Update and install tools
 RUN apt-get update 

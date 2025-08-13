@@ -47,7 +47,7 @@ Verify image is now available in docker: </br>
 
 Create container based off the image and connect interactively to it: </br>
 
-    sudo docker run --name network_testing_container -it network-testing-img
+    sudo docker run --name <container_name> -it docker-mgmt-img
 
 </br>
 
@@ -56,10 +56,10 @@ Create container based off the image and connect interactively to it: </br>
 
 If Container still running just attach to it: </br>
 
-	docker attach network_testing_comntainer
+	docker attach <container_name>
 
 If it isn’t running then start and attach: </br>
 	
-    docker start -a -i network_testing_container
+    docker start -a -i <container_name>
 
 </br>
