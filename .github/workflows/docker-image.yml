@@ -7,6 +7,22 @@ on:
   #   branches: [ main ]
 
 jobs:
+
+  tags:
+      runs-on: ubuntu-latest
+
+      steps:
+        - name: Set image tag (date + build number)
+          id: vars
+          run: |
+            DATE_TAG=$(date +'%Y%m%d')
+            # Find the number of builds for today; GITHUB_RUN_NUMBER is unique per workflow, but you may want continuity across the repo
+            BUILD_NUMBER=$( (git tag --list "${DATE_TAG}-*" | wc -l) || echo "0" )
+            BUILD_NUMBER=$((BUILD_NUMBER + 1))
+            VERSION_TAG="${DATE_TAG}-${BUILD_NUMBER}"
+            echo "VERSION_TAG=$VERSION_TAG" >> $GITHUB_ENV
+            echo "::set-output name=version::$VERSION_TAG"
+
   build:
     runs-on: ubuntu-latest
 
@@ -29,4 +45,6 @@ jobs:
       with:
         context: .
         push: true
-        tags: ghcr.io/${{ github.repository }}:latest
+        tags: |
+          ghcr.io/${{ github.repository }}:${{ env.VERSION_TAG }}
+          ghcr.io/${{ github.repository }}:latest
