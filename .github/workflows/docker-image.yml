@@ -45,7 +45,7 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Build and push Docker image
-      uses: docker/build-push-action@v5
+      uses: docker/build-push-action@v6.18.0
       with:
         context: .
         push: true
@@ -53,3 +53,5 @@ jobs:
         tags: |
           ghcr.io/${{ github.repository }}:latest
           ghcr.io/${{ github.repository }}:${{ steps.vars.outputs.version }}
+        provenance: false  # disables attestations
+        sbom: false        # disables SBOM
