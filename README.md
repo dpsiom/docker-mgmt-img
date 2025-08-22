@@ -47,7 +47,7 @@ Verify image is now available in docker: </br>
 
 Create container based off the image and connect interactively to it: </br>
 
-    sudo docker run --name <container_name> -it docker-mgmt-img
+    sudo docker run --name <container_name> -it ghcr.io/dpsiom/docker-mgmt-img:latest
 
 </br>
 
